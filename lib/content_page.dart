@@ -11,15 +11,15 @@ class ContentPage extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Positioned(
-                  child: Container(
+                const Positioned(
+                  child: SizedBox(
                     height: 500,
                     child: Stack(
                       children: [
                         Positioned(
-                          child: Container(
+                          child: SizedBox(
                             height: 450,
-                            child: const Image(
+                            child: Image(
                               fit: BoxFit.cover,
                               image: NetworkImage(
                                   'https://c1.wallpaperflare.com/preview/72/58/378/dublin-landscape-river-ireland.jpg'),
