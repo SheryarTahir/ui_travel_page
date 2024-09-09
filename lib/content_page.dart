@@ -30,27 +30,31 @@ class ContentPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  child: Positioned(
-                    top: 70,
-                    left: 20,
-                    right: 20,
-                    child: Container(
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.arrow_back_ios,
-                            color: Colors.white,
+                Stack(
+                  children: [
+                    Container(
+                      child: Positioned(
+                        top: 70,
+                        left: 20,
+                        right: 20,
+                        child: Container(
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Icon(
+                                Icons.arrow_back_ios,
+                                color: Colors.white,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.white,
+                              ),
+                            ],
                           ),
-                          Icon(
-                            Icons.favorite,
-                            color: Colors.white,
-                          ),
-                        ],
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
                 const Positioned(
                   bottom: 0,
